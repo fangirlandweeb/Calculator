@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<head>
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <title></title>
+     <meta name="description" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+</head>
+
+<body>
+     <h1>Calculator</h1>
+     <table class="calculator">
+          <tr>
+               <td colspan="4">
+                    <!-- <input type="text" onkeypress='keypresshandler(event)'  class="display-box" name="display" id="entry" /> -->
+                    <input type="text" pattern="[A-Za-z]" class="display-box" name="display" id="entry" />
+
+               </td>
+          </tr>
+          <tr>
+               <td><input type="button" class="numBtn" value="7" onclick="display('7')" /></td>
+               <td><input type="button" class="numBtn" value="8" onclick="display('8')" /></td>
+               <td><input type="button" class="numBtn" value="9" onclick="display('9')" /></td>
+               <td><input type="button" class="optor" id="plus" value="+" onclick="display('+')" /></td>
+          </tr>
+          <tr>
+               <td><input type="button" class="numBtn" value="4" onclick="display('4')" /></td>
+               <td><input type="button" class="numBtn" value="5" onclick="display('5')" /></td>
+               <td><input type="button" class="numBtn" value="6" onclick="display('6')" /></td>
+               <td><input type="button" class="optor" id="minus" value="-" onclick="display('-')"></td>
+          </tr>
+          <tr>
+               <td><input type="button" class="numBtn" value="1" onclick="display('1')" /></td>
+               <td><input type="button" class="numBtn" value="2" onclick="display('2')" /></td>
+               <td><input type="button" class="numBtn" value="3" onclick="display('3')" /></td>
+               <td><input type="button" class="optor" value="*" onclick="display('*')" />
+          </tr>
+          </td>
+          </tr>
+          <tr>
+               <td><input type="button" class="optor" value="AC" onclick="clrscr()" /></td>
+               <td><input type="button" class="numBtn" value="0" style="width:92%;" onclick="display('0')">
+               </td>
+               <td><input type="button" class="optor" id="enterBtn" value="=" onclick="calculate()" /></td>
+               <td><input type="button" class="optor" id="minus" value="/" onclick="display('/')" /></td>
+          </tr>
+     </table>
+     <script src="index.js" async defer></script>
+</body>
+
+</html>

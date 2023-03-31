@@ -1,0 +1,61 @@
+:root {
+     --borderColor: #7b43bb;
+     --bgColor: #b476fc;
+     --btnColor: #cf89eb;
+     --opColor: #ce84f1;
+     --headerFont: 'Righteous', cursive;
+}
+
+body {
+     /* margin:; */
+     padding: 20px;
+     align-items: center;
+     background-color: #faf4a2;
+}
+
+h1{
+     text-align: center;
+     font-size: 6em;
+     font-family: var(--headerFont);
+}
+
+table {
+     border-style: solid;
+     border-color: var(--borderColor);
+     border-spacing: 5px;
+     background-color: var(--bgColor);
+     margin: 50px;
+     padding: 20px 10px;
+     align-self: center;
+}
+
+.calculator{
+     margin: 0 auto;
+}
+
+input {
+     padding: 10px;
+}
+
+.numBtn {
+     padding: 10px 12px;
+     background-color: var(--btnColor);
+}
+
+.optor {
+     background-color: var(--opColor);
+     padding: 10px 12px;
+
+}
+
+.display-box {
+     background-color: #a276bb;
+}
+
+#plus {
+     padding: 10px 10px;
+}
+
+#minus {
+     padding-right: 10px 12px;
+}
